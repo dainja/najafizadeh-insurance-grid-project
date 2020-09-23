@@ -1,0 +1,350 @@
+/* 
+================================================
+    Font Import
+================================================
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
+
+/* 
+================================================
+    Color Variables
+================================================
+*/
+:root {
+  --primary-bg-color: #c7ddea;
+  --secondary-bg-color: #f17949;
+  --third-bg-color: #fab131;
+  --bg-grey-color: #a9a19e;
+  --bg-darkgrey-color: #777574;
+
+  --font-black-op0-8: rgba(0, 0, 0, 0.8);
+  --font-black-op0-7: rgba(0, 0, 0, 0.7);
+  --font-black-op0-6: rgba(0, 0, 0, 0.6);
+  --font-black-op0-5: rgba(0, 0, 0, 0.5);
+  --font-black-op0-4: rgba(0, 0, 0, 0.4);
+
+  --font-black-color: #000000;
+  --font-white-color: #ffffff;
+}
+
+/* 
+================================================
+    Simple CSS Reset
+================================================
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-size: 16px;
+  margin: 0 auto;
+  max-height: 34rem;
+  max-width: 62.625rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 
+================================================
+    Utilities
+================================================
+*/
+.center {
+  margin: 0 auto;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.btn {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  width: 8.1875rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 6.25rem;
+  padding: 0.84375rem 0;
+  color: var(--font-black-op0-8);
+  text-transform: uppercase;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+================================================
+    Contact Showcase
+================================================
+*/
+
+#contact .contact-showcase {
+  height: 340px;
+  background-color: var(--primary-bg-color);
+  position: relative;
+}
+
+#contact .contact-showcase h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+
+  color: #000000;
+  z-index: 9999;
+}
+#contact .contact-showcase img {
+  position: absolute;
+  right: 115px;
+  bottom: 0;
+  max-width: 100%;
+}
+
+/* 
+================================================
+    Navigation
+================================================
+*/
+
+.nav-wrapper{
+  background-color: #ffffff;
+}
+
+#main-nav .nav-box {
+  height: 68px;
+
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav li {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.02em;
+
+  color: var(--font-black-op0-4);
+
+  width: 11.5625rem;
+  height: 3.5625rem;
+}
+
+#main-nav .special-home {
+  color: var(--font-black-color);
+}
+
+
+
+/* 
+================================================
+    Contact Heading and Form
+================================================
+*/
+#contact .contact-form {
+  height: 544px;
+  background: #a9a19e;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#contact .contact-form-heading {
+  display: block;
+  margin-top: 106px;
+  margin-left: 78px;
+}
+
+#contact .contact-form-heading h3 {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+#contact .contact-form-container {
+  margin-top: 106px;
+}
+
+#contact .contact-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contact-form-container label {
+  display: inline-block;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 100%;
+  padding-bottom: 10px;
+  letter-spacing: -0.02em;
+
+  color: var(--font-white-color);
+
+  opacity: 0.7;
+}
+
+#contact .contact-form-container input[type="text"] {
+  width: 334px;
+  height: 40px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  border: none;
+}
+
+#contact .contact-form-container input[type="text"]:focus {
+  outline: none;
+}
+
+#contact .contact-form-container textarea {
+  height: 166px;
+  width: 334px;
+  margin-bottom: 30px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+  padding: 18px 16px 16px 18px;
+  border-radius: 3px;
+  border: none;
+  resize: none;
+}
+
+#contact .contact-form-container textarea::placeholder {
+  color: var(--font-black-color);
+}
+
+#contact .contact-form-container textarea:focus {
+  outline: none;
+}
+
+#contact form .btn {
+  border: none;
+  align-self: flex-end;
+}
+
+#contact form .btn-container {
+  width: 334px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+/* 
+================================================
+    Map with div box and map pin
+================================================
+*/
+#contact .contact-map-bg {
+  height: 407px;
+  background: lightpink;
+  background: url(/img/map.svg);
+  position: relative;
+}
+
+#contact .contact-map {
+}
+
+#contact .map-info-area {
+  display: inline-block;
+  height: 206px;
+  width: 323px;
+  background-color: var(--third-bg-color);
+  color: var(--font-white-color);
+  margin: 45px 0 0 86px;
+}
+
+#contact .map-info-area h3 {
+  margin: 23px 23px 0 23px;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+
+  color: var(--font-white-color);
+}
+
+#contact .map-info-area p {
+  margin: 5px 23px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#contact .contact-map img {
+  margin: 0;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* 
+================================================
+    Footer
+================================================
+*/
+footer {
+  height: 340px;
+  background-color: #777574;
+}
